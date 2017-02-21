@@ -28,7 +28,7 @@ let Mess = React.createClass({
             liked: this.state.checkV,
         };
         let data = this.state.data;  //获取data
-        // this.refs.goodRadio.saySomethis()
+      
         let re = /^\w{8,12}$/  //验证账号
         //账号密码验证
         if (formData.id == "" || formData.id == null) {
@@ -61,8 +61,7 @@ let Mess = React.createClass({
                 "liked": formData.liked
             }]);
             this.setState({data});
-            // alert('恭喜您,注册成功!!!');
-             //console.log(data)
+           
             let postData = 'uid=' + formData.id + "&psd=" + formData.psd + "&xueli=" + formData.xueli + "&male=" + formData.male + "&liked=" + formData.liked;
             $.ajax({
                 url: 'http://localhost:8080/',
