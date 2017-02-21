@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+}
+.colorStyle{
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.divs{
+    background: #ff000b;
+    color: white;
+    margin-top:10px;
+}
+.divs:hover{
+    color:white;
+    background: #ed010e;
+}
+.box{
+    padding-bottom: 70px;
+}
